@@ -117,4 +117,14 @@ s = "Hunny"
 print(tiggerfy(s))
 
 def locate_thistles(items):
-    
+    remove_s = 'thistle'
+    result = []
+    for i in range(len(items)):
+        if items[i] == remove_s:
+            result.append(i)
+    return result
+
+items = ["thistle", "stick", "carrot", "thistle", "eeyore's tail"]
+print(locate_thistles(items))
+items = ["book", "bouncy ball", "leaf", "red balloon"]
+print(locate_thistles(items))
